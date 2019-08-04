@@ -3,11 +3,7 @@
     <classAccesses>
         <apexClass>HouseService</apexClass>
         <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ResponseDetail</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
+    </classAccesses>    
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
