@@ -120,7 +120,7 @@ URL :  `/House/{Id}`
 
 #### Success Response
 
-Code : `200 OK`
+Code : `204 No Content`
 
 Response Body:
 ```json
