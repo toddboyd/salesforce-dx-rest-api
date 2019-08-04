@@ -1,6 +1,6 @@
 # Salesforce DX REST API
 
-This project is the code that accompanies the following tutorials:
+This code accompanies the following tutorials:
 
  1. [Create a REST API with Salesforce DX, part 1](https://sfdcdev.net/create-a-rest-api-with-saelsforce-dx/)
  2. Create a REST API with Salesforce DX, part 2
@@ -15,7 +15,36 @@ This project is the code that accompanies the following tutorials:
 
 ## API Documentation
 
- - Create House : `POST /House/`
+### Create House
+Method: `POST`
+URL :  `/House/`
+Request Body:
+```json
+{
+  "attributes": {
+    "type": "House__c"
+  },
+  "Address__c": "234 Main St.",
+  "City__c":"Phoenix",
+  "State__c":"AZ",
+  "Zip_Code__c":"85004",
+  "Square_Feet__c":"2000",
+  "Bathrooms__c":"2.5",
+  "Bedrooms__c":"3"
+}
+```
+
+### Success Response
+Code : `201 Created`
+Response Body:
+```json
+001S0000012YeslIAC
+```
+
+### Error Response
+Code : `400 Bad Request`
+
+
  - Update House : `PATCH /House/{Id}`
  - Get House : `GET /House/{Id}`
  - Delete House : `DELETE /House/{Id}`
