@@ -33,7 +33,7 @@ public class HouseServiceTest {
   }
 
   @isTest
-  static void getShouldReturn404() {
+  static void getWithInvalidIdShouldReturn404() {
     // GET request with an invalid Id
     // should return 404
 
@@ -173,7 +173,7 @@ public class HouseServiceTest {
   }
 
   @isTest
-  static void Patch_Should_Return_400() {
+  static void patchShouldReturn400() {
     // PATCH request with invalid request body
     // but a valid Id should return 400
 
@@ -205,7 +205,7 @@ public class HouseServiceTest {
   }
 
   @isTest
-  static void Delete_Should_Return_204() {
+  static void deleteShouldReturn204() {
     // DELETE request with a valid Id
     // should return 204
 
@@ -234,7 +234,7 @@ public class HouseServiceTest {
   }
 
   @isTest
-  static void Delete_With_Bad_Id_Should_Return_204() {
+  static void deleteWithBadIdShouldReturn204() {
     // DELETE request with an invalid Id
     // should return 204
 

@@ -25,10 +25,10 @@ global with sharing class HouseService {
   }
 
   /*
-        Method:         GET /House/{Id}
-        Status Codes:   200 Success
-                        404 Not Found
-                        500 Internal Server ERror
+  Method:         GET /House/{Id}
+  Status Codes:   200 Success
+                  404 Not Found
+                  500 Internal Server ERror
   */
   @HttpGet
   global static void getHouseById() {
@@ -62,11 +62,11 @@ global with sharing class HouseService {
   }
 
   /*
-        Method:         PATCH /House/{Id}
-        Status Codes:   204 No Content
-                        400 Bad Request
-                        404 Not Found
-                        500 Internal Server Error
+  Method:         PATCH /House/{Id}
+  Status Codes:   204 No Content
+                  400 Bad Request
+                  404 Not Found
+                  500 Internal Server Error
   */
   @HttpPatch
   global static void updateExistingHouse() {
@@ -101,10 +101,10 @@ global with sharing class HouseService {
   }
 
   /*
-        Method:         DELETE /House/{Id}
-        Status Codes:   204 No Content
-                        400 Bad Request
-                        500 Internal Server Error
+  Method:         DELETE /House/{Id}
+  Status Codes:   204 No Content
+                  400 Bad Request
+                  500 Internal Server Error
   */
   @HttpDelete
   global static void deleteHouseById() {
@@ -116,9 +116,6 @@ global with sharing class HouseService {
       response.statusCode = 204;
     } catch (QueryException e) {
       response.statusCode = 204;
-    } catch (DmlException e) {
-      response.statusCode = 400;
-      response.responseBody = Blob.valueOf(e.getMessage());
     } catch (Exception e) {
       response.statusCode = 500;
       response.responseBody = Blob.valueOf(e.getMessage());
