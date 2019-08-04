@@ -16,7 +16,7 @@ This code accompanies the following tutorials:
 ## API Documentation
 
 ### Create House
-Method: `POST`
+Method: `POST` 
 URL :  `/House/`
 Request Body:
 ```json
@@ -35,9 +35,9 @@ Request Body:
 ```
 
 ### Success Response
-Code : `201 Created`
+Code : `201 Created` 
 Response Body:
-```json
+```
 001S0000012YeslIAC
 ```
 
