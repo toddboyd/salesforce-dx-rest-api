@@ -16,10 +16,9 @@ This code accompanies the following tutorials:
 ## API Documentation
 
 ### Create House
-Method: `POST` 
-
+___
+Method: `POST`
 URL :  `/House/`
-
 Request Body:
 ```json
 {
@@ -36,19 +35,94 @@ Request Body:
 }
 ```
 
-### Success Response
-Code : `201 Created` 
+#### Success Response
+Code : `201 Created`
+Response Body: `001S0000012YeslIAC`
 
-Response Body:
-```
-001S0000012YeslIAC
-```
-
-### Error Response
+#### Error Response
 Code : `400 Bad Request`
 
 
- - Update House : `PATCH /House/{Id}`
- - Get House : `GET /House/{Id}`
- - Delete House : `DELETE /House/{Id}`
+### Update House
+___
+Method: `PATCH`
+URL :  `/House/{Id}`
+Request Body:
+```json
+{
+  "attributes": {
+    "type": "House__c"
+  },
+  "Address__c": "234 Main St.",
+  "City__c":"Phoenix",
+  "State__c":"AZ",
+  "Zip_Code__c":"85004",
+  "Square_Feet__c":"2000",
+  "Bathrooms__c":"2.5",
+  "Bedrooms__c":"3"
+}
+```
+
+#### Success Response
+Code : `204 No Content`
+
+
+#### Error Response
+Code : `400 Bad Request`
+Code : `404 Not Found`
+
+
+### Get House
+___
+Method: `GET`
+URL :  `/House/{Id}`
+
+#### Success Response
+Code : `200 OK`
+Response Body:
+```json
+{
+  "attributes": {
+    "type": "House__c"
+  },
+  "Address__c": "234 Main St.",
+  "City__c":"Phoenix",
+  "State__c":"AZ",
+  "Zip_Code__c":"85004",
+  "Square_Feet__c":"2000",
+  "Bathrooms__c":"2.5",
+  "Bedrooms__c":"3"
+}
+```
+
+#### Error Response
+Code : `400 Bad Request`
+Code : `404 Not Found`
+
+
+### Delete House
+___
+Method: `DELETE`
+URL :  `/House/{Id}`
+
+#### Success Response
+Code : `200 OK`
+Response Body:
+```json
+{
+  "attributes": {
+    "type": "House__c"
+  },
+  "Address__c": "234 Main St.",
+  "City__c":"Phoenix",
+  "State__c":"AZ",
+  "Zip_Code__c":"85004",
+  "Square_Feet__c":"2000",
+  "Bathrooms__c":"2.5",
+  "Bedrooms__c":"3"
+}
+```
+
+#### Error Response
+Code : `400 Bad Request`
 
