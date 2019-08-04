@@ -17,8 +17,10 @@ This code accompanies the following tutorials:
 
 ### Create House
 ___
-Method: `POST`
-URL :  `/House/`
+Method: `POST` 
+
+URL :  `/House/` 
+
 Request Body:
 ```json
 {
@@ -36,17 +38,22 @@ Request Body:
 ```
 
 #### Success Response
-Code : `201 Created`
+
+Code : `201 Created` 
+
 Response Body: `001S0000012YeslIAC`
 
 #### Error Response
-Code : `400 Bad Request`
 
+Code : `400 Bad Request`
 
 ### Update House
 ___
+
 Method: `PATCH`
+
 URL :  `/House/{Id}`
+
 Request Body:
 ```json
 {
@@ -64,21 +71,25 @@ Request Body:
 ```
 
 #### Success Response
+
 Code : `204 No Content`
 
-
 #### Error Response
-Code : `400 Bad Request`
-Code : `404 Not Found`
 
+Code : `400 Bad Request`
+
+Code : `404 Not Found`
 
 ### Get House
 ___
 Method: `GET`
+
 URL :  `/House/{Id}`
 
 #### Success Response
+
 Code : `200 OK`
+
 Response Body:
 ```json
 {
@@ -96,17 +107,21 @@ Response Body:
 ```
 
 #### Error Response
-Code : `400 Bad Request`
-Code : `404 Not Found`
 
+Code : `400 Bad Request`
+
+Code : `404 Not Found`
 
 ### Delete House
 ___
 Method: `DELETE`
+
 URL :  `/House/{Id}`
 
 #### Success Response
+
 Code : `200 OK`
+
 Response Body:
 ```json
 {
@@ -124,5 +139,6 @@ Response Body:
 ```
 
 #### Error Response
+
 Code : `400 Bad Request`
 
