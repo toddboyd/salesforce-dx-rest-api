@@ -10,8 +10,8 @@ This code accompanies the following tutorials:
 ## Setup
 
  1. Clone this repo `git clone https://github.com/toddboyd/salesforce-dx-rest-api.git`
- 2. Create a scratch org `sfdx force:org:create -a houseapi -f config\project-scratch-def.json --setdefaultusername --json --loglevel fatal`
- 3. Push the code to your scratch org `sfdx force:source:push --json --loglevel fatal`
+ 2. Create a scratch org `sfdx force:org:create -a houseapi -f config\project-scratch-def.json --setdefaultusername`
+ 3. Push the code to your scratch org `sfdx force:source:push`
 
 ## API Documentation
 
