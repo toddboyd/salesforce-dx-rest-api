@@ -4,7 +4,7 @@ This code accompanies the following tutorials:
 
  1. [Create a REST API with Salesforce DX, part 1](https://sfdcdev.net/create-a-rest-api-with-saelsforce-dx/)
  2. [Create a REST API with Salesforce DX, part 2](https://sfdcdev.net/create-a-rest-api-with-salesforce-dx-part-2/)
- 3. Unit test a Salesforce REST API
+ 3. [Unit test a Salesforce REST API](https://sfdcdev.net/unit-test-a-salesforce-rest-api/)
  4. Test a Salesforce REST API with Postman
 
 ## Setup
